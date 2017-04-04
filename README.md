@@ -104,7 +104,7 @@ Friday, August 12, 2016
 26       $OnlineDC = 'DC1','DC3','DC56'
 ```
 
-## Or alternatively, keep your PDC list in a text file and read that in
+  - Or alternatively, keep your PDC list in a text file and read that in
  
 #### After:
 ```
@@ -112,12 +112,9 @@ Friday, August 12, 2016
 ```
 
 - Click F5 to run the tests or the Play button.
- 
 - Once the tests are complete the two reports will open
-
   - The Engineer Report (Latest-Domain-Report.html)
   - The Summary Report (Latest-Domain.html)
-
 - These reports can also be found in the following directory: 
   - F:\Project\Reports
     - Only the latest HTML reports are kept
@@ -126,7 +123,6 @@ Friday, August 12, 2016
 ### **Invoke-Tests**
 
 - See the Note from the Invoke-ConnectivityTests (above)
-
 - If you need to keep a Manual List you should replace the following lines in this script
 
 #### Before:
@@ -143,14 +139,15 @@ Friday, August 12, 2016
 ````
 
 ### Change 2 - add the list of your PDC's on line 26
-- you can select any/single Domain Controller from each Domain here, they do not have to be the PDC.
+- you can select any/single Domain Controller from each Domain here
+  - They do not have to be the PDC.
 
 #### After:
 ```
 26       $OnlineDC = 'DC1','DC3','DC4','DC5'
 ```
 
-- Or alternatively, keep your PDC list in a text file and read that in
+  - Or alternatively, keep your PDC list in a text file and read that in
  
 #### After:
 ```
@@ -158,14 +155,10 @@ Friday, August 12, 2016
 ```
 
 - Click F5 to run the tests or the Play button.
-
   - Note: These tests will take a long time to run, since it runs them against every Domain Controller
-
 - Once the tests are complete the two reports will open
-
   - The Engineer Report (Latest-Domain-Report.html)
   - The Summary Report (Latest-Domain.html)
-
 - These reports can also be found in the following directory: 
   - F:\Project\Reports
     - Only the latest HTML reports are kept
