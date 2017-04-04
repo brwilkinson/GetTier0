@@ -58,89 +58,115 @@ Friday, August 12, 2016
 
 ## Running the Tests
 
-1. **Invoke-connectivityTests**
+### **Invoke-connectivityTests**
 
-1.
-  1. Depending on the size of your environment this could take some time to run
+- Depending on the size of your environment this could take some time to run
+  - Even several days.
+- These are read-only tests for connectivity to the DC&#39;s and the Forest/Domain
 
-1.
-  1.
-    1. Even several days.
-  2. These are ready only tests for connectivity to the DC&#39;s and the Forest/Domain
-
-1.
-  1.
-    1. You should be running as and Enterprise Admin
-  2. Click F5 to run the tests or the Play button.
-  3. Once the tests are complete the results will be in the following directory: F:\Project\Connectivity
-
-1.
-  1.
-    1. One file for Online and one file for Offline.
+- You should be running as and Enterprise Admin
+- Click F5 (or the Play button) to run the tests  in the ISE.
+- Once the tests are complete the results will be in the following directory: 
+  - F:\Project\Connectivity
+    - File for online DC's  E.g. 2016-05-11_0435-Online.csv
+    - File for offline DC's E.g. 2016-05-13_0739-contoso.com-contoso.com-Offline.csv
 
 **\* Note:**
 
-- These tests are used for troubleshooting.
-- These tests are also part of the other two tests.
+- These tests can be used for identifying servers where WSMAN is unable to connect
+- These steps are also performed as part of the other two (Domain and Host) tests.
   - If these tests took a long time to run, you should keep a manual list of your PDC&#39;s and your Hosts that you want to be part of the test, rather than executing this each time as part of the other two tests.
   - If the tests did not take a long time to run, then you don&#39;t need to make any modifications.
 
-1. **Invoke-inDomainTests**
+### **Invoke-inDomainTests**
 
-1.
-  1. See the **Note** from the Invoke-ConnectivityTests
+- See the **Note** from the Invoke-ConnectivityTests (Above)
 
-1. If you need to keep a Manual List you should replace the following lines in this script
+- If you need to keep a Manual List you should replace the following lines in this script
 
-| Before24     # Find all online PDC&#39;s in the forest (each domain)25     $OnlineDCObjects = Get-ADSHOnlineDC -PDCOnly26     $OnlineDC = $OnlineDCObjects.Name  **Change 1 - command out line 25 by adding #** After25      #$OnlineDCObjects = Get-ADSHOnlineDC -PDCOnly   **Change 2 - add the list of your DC&#39;s on line 26, every DC in the forest should be listed** After26       $OnlineDC = &#39;DC1&#39;,&#39;DC3&#39;,&#39;DC56&#39; Or alternatively, keep your PDC list in a text file and read that in After26       $OnlineDC = Get-Content -Path $Base\ComputersDomainTests.txt  |
-| --- |
+#### Before:
+```
+24     # Find all online PDC's in the forest (each domain)
+25     $OnlineDCObjects = Get-ADSHOnlineDC -PDCOnly
+26     $OnlineDC = $OnlineDCObjects.Name
+```
 
-1. Click F5 to run the tests or the Play button.
+### Change 1 - comment out line 25 by adding #
 
-1. Once the tests are complete the two reports will open
+#### After:
+```
+25      #$OnlineDCObjects = Get-ADSHOnlineDC -PDCOnly 
+```
 
-1.
-  1. The Engineer Report (Latest-Domain-Report.html)
-  2. The Summary Report (Latest-Domain.html)
+### Change 2 - add the list of your DC's on line 26, every DC in the forest should be listed
+#### After:
+```
+26       $OnlineDC = 'DC1','DC3','DC56'
+```
 
-1.
-  1.
-    1. These reports can also be found in the following directory: F:\Project\Reports
-    2. Only the latest HTML reports are kept
-    3. There is also raw reporting files in CSV format from Every single Run.
+## Or alternatively, keep your PDC list in a text file and read that in
+ 
+#### After:
+```
+26       $OnlineDC = Get-Content -Path $Base\ComputersDomainTests.txt
+```
 
-1. **Invoke-Tests**
+- Click F5 to run the tests or the Play button.
+ 
+- Once the tests are complete the two reports will open
 
-1.
-  1. See the Note from the Invoke-ConnectivityTests (above)
+  - The Engineer Report (Latest-Domain-Report.html)
+  - The Summary Report (Latest-Domain.html)
 
-1.
-  1.
-    1. If you need to keep a Manual List you should replace the following lines in this script
+- These reports can also be found in the following directory: 
+  - F:\Project\Reports
+    - Only the latest HTML reports are kept
+    - There is also raw reporting files in CSV format from Every single Run.
 
-| Before
-24     # Find all online PDC&#39;s in the forest (each domain)25     $OnlineDCObjects = Get-ADSHOnlineDC -PDCOnly26     $OnlineDC = $OnlineDCObjects.Name | select -last 1  **Change 1 - command out line 25 by adding #** After25      #$OnlineDCObjects = Get-ADSHOnlineDC   **Change 2 - add the list of your PDC&#39;s on line 26, you can select any/single Domain Controller from each Domain here, they do not have to be the PDC.** After26       $OnlineDC = &#39;DC1&#39;,&#39;DC3&#39;,&#39;DC4&#39;,&#39;DC5&#39; Or alternatively, keep your PDC list in a text file and read that in After26       $OnlineDC = Get-Content -Path $Base\ComputersHostTests.txt  |
-| --- |
+### **Invoke-Tests**
 
-1. By default  the tests only run against 1 host, you need to make a change to fix this
+- See the Note from the Invoke-ConnectivityTests (above)
 
-| Before
-24     # Find all online PDC&#39;s in the forest (each domain)25     $OnlineDCObjects = Get-ADSHOnlineDC -PDCOnly26     $OnlineDC = $OnlineDCObjects.Name **| select -last 1**  Change 1 - remove the part that says  | select -last 1After26      $OnlineDC = $OnlineDCObjects.Name |
-| --- |
+- If you need to keep a Manual List you should replace the following lines in this script
 
-1. Click F5 to run the tests or the Play button.
+#### Before:
+````
+24     # Find all online PDC's in the forest (each domain)
+25     $OnlineDCObjects = Get-ADSHOnlineDC -PDCOnly
+26     $OnlineDC = $OnlineDCObjects.Name | select -last 1
+````
 
-1.
-  1. Note: These tests will take a long time to run, since it runs them against every Domain Controller
+### Change 1 - command out line 25 by adding #
+#### After:
+````
+25      #$OnlineDCObjects = Get-ADSHOnlineDC 
+````
 
-1. Once the tests are complete the two reports will open
+### Change 2 - add the list of your PDC's on line 26
+- you can select any/single Domain Controller from each Domain here, they do not have to be the PDC.
 
-1.
-  1. The Engineer Report (Latest-Domain-Report.html)
-  2. The Summary Report (Latest-Domain.html)
+#### After:
+```
+26       $OnlineDC = 'DC1','DC3','DC4','DC5'
+```
 
-1.
-  1.
-    1. These reports can also be found in the following directory: F:\Project\Reports
-    2. Only the latest HTML reports are kept
-    3. There is also raw reporting files in CSV format from Every single Run.
+- Or alternatively, keep your PDC list in a text file and read that in
+ 
+#### After:
+```
+26       $OnlineDC = Get-Content -Path $Base\ComputersHostTests.txt
+```
+
+- Click F5 to run the tests or the Play button.
+
+  - Note: These tests will take a long time to run, since it runs them against every Domain Controller
+
+- Once the tests are complete the two reports will open
+
+  - The Engineer Report (Latest-Domain-Report.html)
+  - The Summary Report (Latest-Domain.html)
+
+- These reports can also be found in the following directory: 
+  - F:\Project\Reports
+    - Only the latest HTML reports are kept
+    - There is also raw reporting files in CSV format from Every single Run.
