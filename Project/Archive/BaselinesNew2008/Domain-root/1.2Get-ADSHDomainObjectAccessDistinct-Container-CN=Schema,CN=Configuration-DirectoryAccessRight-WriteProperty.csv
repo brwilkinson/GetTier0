@@ -1,0 +1,2 @@
+"DistinguishedName","IdentityReference","ActiveDirectoryRights","AccessControlType","PSComputerName","RunspaceId","PSShowComputerName"
+"CN=Schema,CN=Configuration,DC=contoso,DC=com","CONTOSO\Schema Admins","CreateChild, Self, WriteProperty, ExtendedRight, GenericRead, WriteDacl, WriteOwner","Allow","2008r2.contoso.com","5a7c7bad-b053-4836-a818-e33425bb46b0","False"

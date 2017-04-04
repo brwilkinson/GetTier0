@@ -1,0 +1,3 @@
+"DistinguishedName","IdentityReference","ActiveDirectoryRights","AccessControlType","PSComputerName","RunspaceId","PSShowComputerName"
+"CN=Public Key Services,CN=Services,CN=Configuration,DC=contoso,DC=com","CONTOSO\Enterprise Admins","CreateChild, Self, WriteProperty, ExtendedRight, GenericRead, WriteDacl, WriteOwner","Allow","2008r2.contoso.com","5a7c7bad-b053-4836-a818-e33425bb46b0","False"
+"CN=Public Key Services,CN=Services,CN=Configuration,DC=contoso,DC=com","CONTOSO\Domain Admins","CreateChild, Self, WriteProperty, ExtendedRight, Delete, GenericRead, WriteDacl, WriteOwner","Allow","2008r2.contoso.com","5a7c7bad-b053-4836-a818-e33425bb46b0","False"

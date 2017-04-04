@@ -1,0 +1,4 @@
+"Identity"
+"CN=Enterprise Admins,CN=Users,DC=XYZ123,DC=com"
+"CN=Domain Admins,CN=Users,DC=AA123,DC=XYZ123,DC=com"
+"CN=BRW,CN=Users,DC=AA123,DC=XYZ123,DC=com"

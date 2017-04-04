@@ -1,0 +1,5 @@
+#TYPE System.Security.AccessControl.RegistryAccessRule
+"RegistryRights","AccessControlType","IdentityReference","IsInherited","InheritanceFlags","PropagationFlags"
+"FullControl","Allow","NT AUTHORITY\SYSTEM","False","ContainerInherit, ObjectInherit","None"
+"FullControl","Allow","BUILTIN\Administrators","False","ContainerInherit, ObjectInherit","None"
+"FullControl","Allow","XYZ123\BRW","False","ContainerInherit, ObjectInherit","None"

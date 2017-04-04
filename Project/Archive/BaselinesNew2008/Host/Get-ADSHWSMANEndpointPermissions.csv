@@ -1,0 +1,5 @@
+#TYPE Selected.System.Management.Automation.PSCustomObject
+"Identity"
+"NT AUTHORITY\INTERACTIVE"
+"BUILTIN\Administrators"
+"BUILTIN\Remote Management Users"

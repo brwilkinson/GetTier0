@@ -1,0 +1,4 @@
+#TYPE Deserialized.System.Management.Automation.PSCustomObject
+"AccessMaskRaw","ComputerName","DisplayName","AccessMask","AceTypeRaw","AceFlags","Name","AceType","Identity","PSComputerName","RunspaceId","PSShowComputerName"
+"983551","2008R2","Application Experience","QueryConfig, ChangeConfig, QueryStatus, EnumerateDependents, Start, Stop, PauseContinue, Interrogate, UserDefinedControl, Delete, ReadControl, WriteDac, WriteOwner","0","0","AeLookupSvc","Allow","BUILTIN\Administrators","2008r2.contoso.com","c157e16f-d6a3-4d1e-871c-1a5200309a4e","False"
+"983551","2008R2","Application Experience","QueryConfig, ChangeConfig, QueryStatus, EnumerateDependents, Start, Stop, PauseContinue, Interrogate, UserDefinedControl, Delete, ReadControl, WriteDac, WriteOwner","0","0","AeLookupSvc","Allow","BUILTIN\Server Operators","2008r2.contoso.com","c157e16f-d6a3-4d1e-871c-1a5200309a4e","False"

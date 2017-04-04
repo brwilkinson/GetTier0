@@ -1,0 +1,4 @@
+"DistinguishedName","IdentityReference","ActiveDirectoryRights","AccessControlType","PSComputerName","RunspaceId","PSShowComputerName"
+"CN=Computers,DC=contoso,DC=com","CONTOSO\Domain Admins","CreateChild, DeleteChild, Self, WriteProperty, ExtendedRight, GenericRead, WriteDacl, WriteOwner","Allow","2008r2.contoso.com","5a7c7bad-b053-4836-a818-e33425bb46b0","False"
+"CN=Computers,DC=contoso,DC=com","BUILTIN\Administrators","CreateChild, Self, WriteProperty, ExtendedRight, Delete, GenericRead, WriteDacl, WriteOwner","Allow","2008r2.contoso.com","5a7c7bad-b053-4836-a818-e33425bb46b0","False"
+"CN=Computers,DC=contoso,DC=com","NT AUTHORITY\SELF","ReadProperty, WriteProperty, ExtendedRight","Allow","2008r2.contoso.com","5a7c7bad-b053-4836-a818-e33425bb46b0","False"

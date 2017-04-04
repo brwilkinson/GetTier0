@@ -1,0 +1,4 @@
+#TYPE Deserialized.System.Security.AccessControl.RegistryAccessRule
+"PSComputerName","RunspaceId","PSShowComputerName","RegistryRights","AccessControlType","IdentityReference","IsInherited","InheritanceFlags","PropagationFlags"
+"2008r2.contoso.com","c157e16f-d6a3-4d1e-871c-1a5200309a4e","False","FullControl","Allow","NT AUTHORITY\SYSTEM","False","None","None"
+"2008r2.contoso.com","c157e16f-d6a3-4d1e-871c-1a5200309a4e","False","FullControl","Allow","BUILTIN\Administrators","False","None","None"

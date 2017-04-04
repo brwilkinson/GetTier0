@@ -1,0 +1,8 @@
+"DistinguishedName","IdentityReference","ActiveDirectoryRights","AccessControlType","PSComputerName","RunspaceId","PSShowComputerName"
+"CN=Administrators,CN=Builtin,DC=AA123,DC=XYZ123,DC=com","BUILTIN\Administrators","CreateChild, DeleteChild, Self, WriteProperty, ExtendedRight, Delete, GenericRead, WriteDacl, WriteOwner","Allow","USDC1.US.Contoso.com","e5107139-a8a4-4c2f-88a7-ffe97956b255","False"
+"CN=Administrators,CN=Builtin,DC=AA123,DC=XYZ123,DC=com","XYZ123\Enterprise Admins","CreateChild, DeleteChild, Self, WriteProperty, ExtendedRight, GenericRead, WriteDacl, WriteOwner","Allow","USDC1.US.Contoso.com","e5107139-a8a4-4c2f-88a7-ffe97956b255","False"
+"CN=Administrators,CN=Builtin,DC=AA123,DC=XYZ123,DC=com","AA123\Domain Admins","CreateChild, DeleteChild, Self, WriteProperty, ExtendedRight, GenericRead, WriteDacl, WriteOwner","Allow","USDC1.US.Contoso.com","e5107139-a8a4-4c2f-88a7-ffe97956b255","False"
+"CN=Administrators,CN=Builtin,DC=AA123,DC=XYZ123,DC=com","NT AUTHORITY\SELF","ReadProperty, WriteProperty, ExtendedRight","Allow","USDC1.US.Contoso.com","e5107139-a8a4-4c2f-88a7-ffe97956b255","False"
+"CN=Administrators,CN=Builtin,DC=AA123,DC=XYZ123,DC=com","BUILTIN\Terminal Server License Servers","ReadProperty, WriteProperty","Allow","USDC1.US.Contoso.com","e5107139-a8a4-4c2f-88a7-ffe97956b255","False"
+"CN=Administrators,CN=Builtin,DC=AA123,DC=XYZ123,DC=com","BUILTIN\Terminal Server License Servers","ReadProperty, WriteProperty","Allow","USDC1.US.Contoso.com","e5107139-a8a4-4c2f-88a7-ffe97956b255","False"
+"CN=Administrators,CN=Builtin,DC=AA123,DC=XYZ123,DC=com","AA123\Cert Publishers","ReadProperty, WriteProperty","Allow","USDC1.US.Contoso.com","e5107139-a8a4-4c2f-88a7-ffe97956b255","False"

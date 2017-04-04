@@ -1,0 +1,8 @@
+#TYPE Selected.System.Management.Automation.PSCustomObject
+"Identity"
+"NT AUTHORITY\ENTERPRISE DOMAIN CONTROLLERS"
+"BUILTIN\Backup Operators"
+"BUILTIN\Print Operators"
+"BUILTIN\Server Operators"
+"BUILTIN\Account Operators"
+"BUILTIN\Administrators"

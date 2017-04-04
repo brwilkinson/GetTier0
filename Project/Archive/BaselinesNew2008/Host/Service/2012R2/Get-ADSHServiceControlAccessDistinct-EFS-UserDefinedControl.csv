@@ -1,0 +1,6 @@
+#TYPE Deserialized.System.Management.Automation.PSCustomObject
+"AccessMask","AceTypeRaw","ComputerName","AceFlags","Name","Identity","AceType","AccessMaskRaw","DisplayName","PSComputerName","RunspaceId","PSShowComputerName"
+"QueryConfig, ChangeConfig, QueryStatus, EnumerateDependents, Start, Stop, PauseContinue, Interrogate, UserDefinedControl, Delete, ReadControl, WriteDac, WriteOwner","0","DC1","0","EFS","NT AUTHORITY\SYSTEM","Allow","983551","Encrypting File System (EFS)","DC1.Contoso.com","14594b49-905e-4494-a609-094ea30b5c25","False"
+"QueryConfig, ChangeConfig, QueryStatus, EnumerateDependents, Start, Stop, Interrogate, UserDefinedControl, ReadControl","0","DC1","0","EFS","BUILTIN\Administrators","Allow","131519","Encrypting File System (EFS)","DC1.Contoso.com","14594b49-905e-4494-a609-094ea30b5c25","False"
+"QueryConfig, QueryStatus, EnumerateDependents, Start, Interrogate, UserDefinedControl, ReadControl","0","DC1","0","EFS","NT AUTHORITY\INTERACTIVE","Allow","131485","Encrypting File System (EFS)","DC1.Contoso.com","14594b49-905e-4494-a609-094ea30b5c25","False"
+"QueryConfig, QueryStatus, EnumerateDependents, Start, Interrogate, UserDefinedControl, ReadControl","0","DC1","0","EFS","NT AUTHORITY\SERVICE","Allow","131485","Encrypting File System (EFS)","DC1.Contoso.com","14594b49-905e-4494-a609-094ea30b5c25","False"

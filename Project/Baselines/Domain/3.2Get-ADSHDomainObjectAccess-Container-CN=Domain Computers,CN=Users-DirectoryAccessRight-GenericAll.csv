@@ -1,0 +1,5 @@
+"DistinguishedName","IdentityReference","ActiveDirectoryRights","AccessControlType","PSComputerName","RunspaceId","PSShowComputerName"
+"CN=Domain Computers,CN=Users,DC=AA123,DC=XYZ123,DC=com","NT AUTHORITY\SYSTEM","GenericAll","Allow","USDC1.US.Contoso.com","e5107139-a8a4-4c2f-88a7-ffe97956b255","False"
+"CN=Domain Computers,CN=Users,DC=AA123,DC=XYZ123,DC=com","BUILTIN\Account Operators","GenericAll","Allow","USDC1.US.Contoso.com","e5107139-a8a4-4c2f-88a7-ffe97956b255","False"
+"CN=Domain Computers,CN=Users,DC=AA123,DC=XYZ123,DC=com","AA123\Domain Admins","GenericAll","Allow","USDC1.US.Contoso.com","e5107139-a8a4-4c2f-88a7-ffe97956b255","False"
+"CN=Domain Computers,CN=Users,DC=AA123,DC=XYZ123,DC=com","XYZ123\Enterprise Admins","GenericAll","Allow","USDC1.US.Contoso.com","e5107139-a8a4-4c2f-88a7-ffe97956b255","False"

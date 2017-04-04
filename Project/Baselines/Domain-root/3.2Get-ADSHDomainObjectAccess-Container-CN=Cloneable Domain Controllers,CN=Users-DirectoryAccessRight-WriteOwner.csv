@@ -1,0 +1,2 @@
+"DistinguishedName","IdentityReference","ActiveDirectoryRights","AccessControlType","PSComputerName","RunspaceId","PSShowComputerName"
+"CN=Cloneable Domain Controllers,CN=Users,DC=XYZ123,DC=com","BUILTIN\Administrators","CreateChild, Self, WriteProperty, ExtendedRight, Delete, GenericRead, WriteDacl, WriteOwner","Allow","DC1.Contoso.com","d06997d2-bd42-4826-9aa2-8a221671aa9e","False"

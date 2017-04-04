@@ -1,0 +1,8 @@
+"DistinguishedName","IdentityReference","ActiveDirectoryRights","AccessControlType","PSComputerName","RunspaceId","PSShowComputerName"
+"CN=Backup Operators,CN=Builtin,DC=XYZ123,DC=com","BUILTIN\Administrators","CreateChild, DeleteChild, Self, WriteProperty, ExtendedRight, Delete, GenericRead, WriteDacl, WriteOwner","Allow","DC1.Contoso.com","d06997d2-bd42-4826-9aa2-8a221671aa9e","False"
+"CN=Backup Operators,CN=Builtin,DC=XYZ123,DC=com","XYZ123\Domain Admins","CreateChild, DeleteChild, Self, WriteProperty, ExtendedRight, GenericRead, WriteDacl, WriteOwner","Allow","DC1.Contoso.com","d06997d2-bd42-4826-9aa2-8a221671aa9e","False"
+"CN=Backup Operators,CN=Builtin,DC=XYZ123,DC=com","XYZ123\Enterprise Admins","CreateChild, DeleteChild, Self, WriteProperty, ExtendedRight, GenericRead, WriteDacl, WriteOwner","Allow","DC1.Contoso.com","d06997d2-bd42-4826-9aa2-8a221671aa9e","False"
+"CN=Backup Operators,CN=Builtin,DC=XYZ123,DC=com","NT AUTHORITY\SELF","ReadProperty, WriteProperty, ExtendedRight","Allow","DC1.Contoso.com","d06997d2-bd42-4826-9aa2-8a221671aa9e","False"
+"CN=Backup Operators,CN=Builtin,DC=XYZ123,DC=com","BUILTIN\Terminal Server License Servers","ReadProperty, WriteProperty","Allow","DC1.Contoso.com","d06997d2-bd42-4826-9aa2-8a221671aa9e","False"
+"CN=Backup Operators,CN=Builtin,DC=XYZ123,DC=com","BUILTIN\Terminal Server License Servers","ReadProperty, WriteProperty","Allow","DC1.Contoso.com","d06997d2-bd42-4826-9aa2-8a221671aa9e","False"
+"CN=Backup Operators,CN=Builtin,DC=XYZ123,DC=com","XYZ123\Cert Publishers","ReadProperty, WriteProperty","Allow","DC1.Contoso.com","d06997d2-bd42-4826-9aa2-8a221671aa9e","False"

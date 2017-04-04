@@ -1,0 +1,7 @@
+#TYPE Deserialized.System.Management.Automation.PSCustomObject
+"AccessMaskRaw","ComputerName","DisplayName","AccessMask","AceTypeRaw","AceFlags","Name","AceType","Identity","PSComputerName","RunspaceId","PSShowComputerName"
+"131485","2008R2","DNS Client","QueryConfig, QueryStatus, EnumerateDependents, Start, Interrogate, UserDefinedControl, ReadControl","0","2","Dnscache","Allow","BUILTIN\Users","2008r2.contoso.com","c157e16f-d6a3-4d1e-871c-1a5200309a4e","False"
+"983551","2008R2","DNS Client","QueryConfig, ChangeConfig, QueryStatus, EnumerateDependents, Start, Stop, PauseContinue, Interrogate, UserDefinedControl, Delete, ReadControl, WriteDac, WriteOwner","0","2","Dnscache","Allow","BUILTIN\Administrators","2008r2.contoso.com","c157e16f-d6a3-4d1e-871c-1a5200309a4e","False"
+"131581","2008R2","DNS Client","QueryConfig, QueryStatus, EnumerateDependents, Start, Stop, PauseContinue, Interrogate, UserDefinedControl, ReadControl","0","2","Dnscache","Allow","NT AUTHORITY\SYSTEM","2008r2.contoso.com","c157e16f-d6a3-4d1e-871c-1a5200309a4e","False"
+"131469","2008R2","DNS Client","QueryConfig, QueryStatus, EnumerateDependents, Interrogate, UserDefinedControl, ReadControl","0","0","Dnscache","Allow","NT AUTHORITY\INTERACTIVE","2008r2.contoso.com","c157e16f-d6a3-4d1e-871c-1a5200309a4e","False"
+"131533","2008R2","DNS Client","QueryConfig, QueryStatus, EnumerateDependents, PauseContinue, Interrogate, UserDefinedControl, ReadControl","0","2","Dnscache","Allow","NT SERVICE\Dhcp","2008r2.contoso.com","c157e16f-d6a3-4d1e-871c-1a5200309a4e","False"

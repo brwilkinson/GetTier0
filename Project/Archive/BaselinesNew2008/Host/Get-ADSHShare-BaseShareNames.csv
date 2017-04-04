@@ -1,0 +1,9 @@
+#TYPE Selected.System.Management.Automation.PSCustomObject
+"Name"
+"ADMIN$"
+"C$"
+"D$"
+"F$"
+"IPC$"
+"NETLOGON"
+"SYSVOL"

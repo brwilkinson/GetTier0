@@ -1,0 +1,4 @@
+#TYPE Selected.System.Management.Automation.PSCustomObject
+"Identity"
+"Everyone"
+"BUILTIN\Administrators"

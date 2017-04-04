@@ -1,0 +1,4 @@
+#TYPE Deserialized.System.Management.Automation.PSCustomObject
+"AccessMaskRaw","ComputerName","DisplayName","AccessMask","AceTypeRaw","AceFlags","Name","AceType","Identity","PSComputerName","RunspaceId","PSShowComputerName"
+"131327","2008R2","Distributed Transaction Coordinator","QueryConfig, ChangeConfig, QueryStatus, EnumerateDependents, Start, Stop, PauseContinue, Interrogate, ReadControl","0","0","MSDTC","Allow","NT AUTHORITY\SYSTEM","2008r2.contoso.com","c157e16f-d6a3-4d1e-871c-1a5200309a4e","False"
+"983295","2008R2","Distributed Transaction Coordinator","QueryConfig, ChangeConfig, QueryStatus, EnumerateDependents, Start, Stop, PauseContinue, Interrogate, Delete, ReadControl, WriteDac, WriteOwner","0","0","MSDTC","Allow","BUILTIN\Administrators","2008r2.contoso.com","c157e16f-d6a3-4d1e-871c-1a5200309a4e","False"

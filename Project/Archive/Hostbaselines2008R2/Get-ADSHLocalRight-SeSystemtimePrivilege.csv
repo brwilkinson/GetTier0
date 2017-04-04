@@ -1,0 +1,5 @@
+#TYPE Selected.System.Management.Automation.PSCustomObject
+"Identity"
+"BUILTIN\Server Operators"
+"BUILTIN\Administrators"
+"NT AUTHORITY\LOCAL SERVICE"

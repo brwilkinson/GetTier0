@@ -1,0 +1,7 @@
+#TYPE Selected.System.Management.Automation.PSCustomObject
+"Identity"
+"BUILTIN\Backup Operators"
+"BUILTIN\Print Operators"
+"BUILTIN\Server Operators"
+"BUILTIN\Account Operators"
+"BUILTIN\Administrators"

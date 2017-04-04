@@ -1,0 +1,6 @@
+#TYPE Deserialized.System.Management.Automation.PSCustomObject
+"AccessMask","AceTypeRaw","ComputerName","AceFlags","Name","Identity","AceType","AccessMaskRaw","DisplayName","PSComputerName","RunspaceId","PSShowComputerName"
+"QueryConfig, QueryStatus, EnumerateDependents, Start, Stop, PauseContinue, Interrogate, UserDefinedControl, ReadControl","0","DC1","0","smphost","NT AUTHORITY\SYSTEM","Allow","131581","Microsoft Storage Spaces SMP","DC1.Contoso.com","14594b49-905e-4494-a609-094ea30b5c25","False"
+"QueryConfig, ChangeConfig, QueryStatus, EnumerateDependents, Start, Stop, PauseContinue, Interrogate, UserDefinedControl, Delete, ReadControl, WriteDac, WriteOwner","0","DC1","0","smphost","BUILTIN\Administrators","Allow","983551","Microsoft Storage Spaces SMP","DC1.Contoso.com","14594b49-905e-4494-a609-094ea30b5c25","False"
+"QueryConfig, QueryStatus, EnumerateDependents, Interrogate, UserDefinedControl, ReadControl","0","DC1","0","smphost","NT AUTHORITY\INTERACTIVE","Allow","131469","Microsoft Storage Spaces SMP","DC1.Contoso.com","14594b49-905e-4494-a609-094ea30b5c25","False"
+"QueryConfig, QueryStatus, EnumerateDependents, Interrogate, UserDefinedControl, ReadControl","0","DC1","0","smphost","NT AUTHORITY\SERVICE","Allow","131469","Microsoft Storage Spaces SMP","DC1.Contoso.com","14594b49-905e-4494-a609-094ea30b5c25","False"

@@ -1,0 +1,4 @@
+#TYPE Deserialized.System.Management.Automation.PSCustomObject
+"AccessMask","AceTypeRaw","ComputerName","AceFlags","Name","Identity","AceType","AccessMaskRaw","DisplayName","PSComputerName","RunspaceId","PSShowComputerName"
+"QueryConfig, QueryStatus, EnumerateDependents, Start, PauseContinue, Interrogate, UserDefinedControl, ReadControl, WriteDac, WriteOwner","0","DC1","0","Schedule","BUILTIN\Administrators","Allow","917981","Task Scheduler","DC1.Contoso.com","14594b49-905e-4494-a609-094ea30b5c25","False"
+"QueryConfig, ChangeConfig, QueryStatus, EnumerateDependents, Start, Stop, PauseContinue, Interrogate, UserDefinedControl, Delete, ReadControl, WriteDac, WriteOwner","0","DC1","0","Schedule","NT AUTHORITY\SYSTEM","Allow","983551","Task Scheduler","DC1.Contoso.com","14594b49-905e-4494-a609-094ea30b5c25","False"

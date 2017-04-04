@@ -1,0 +1,4 @@
+#TYPE System.Security.AccessControl.RegistryAccessRule
+"RegistryRights","AccessControlType","IdentityReference","IsInherited","InheritanceFlags","PropagationFlags"
+"FullControl","Allow","NT AUTHORITY\SYSTEM","False","None","None"
+"FullControl","Allow","BUILTIN\Administrators","False","None","None"

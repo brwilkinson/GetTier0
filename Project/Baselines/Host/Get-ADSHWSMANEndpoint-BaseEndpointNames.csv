@@ -1,0 +1,6 @@
+#TYPE Selected.System.Management.Automation.PSCustomObject
+"Name"
+"microsoft.powershell"
+"microsoft.powershell.workflow"
+"microsoft.powershell32"
+"microsoft.windows.servermanagerworkflows"

@@ -1,0 +1,2 @@
+"DistinguishedName","IdentityReference","ActiveDirectoryRights","AccessControlType","PSComputerName","RunspaceId","PSShowComputerName"
+"CN=Replicator,CN=Builtin,DC=AA123,DC=XYZ123,DC=com","NT AUTHORITY\SYSTEM","GenericAll","Allow","USDC1.US.Contoso.com","e5107139-a8a4-4c2f-88a7-ffe97956b255","False"
