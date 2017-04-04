@@ -1,3 +1,5 @@
+
+
 # ADSH Guidelines - Instructions
 
 Friday, August 12, 2016
@@ -52,3 +54,93 @@ Friday, August 12, 2016
 - In the ISE select File, Open, --&gt; F:\Project\Scripts\Invoke-Tests.ps1
 - In the ISE select File, Open, --&gt; F:\Project\Scripts\Invoke-inDomainTests.ps1
 - In the ISE select File, Open, --&gt; F:\Project\Scripts\Invoke-ConnectivityTest.ps1
+
+
+## Running the Tests
+
+1. **Invoke-connectivityTests**
+
+1.
+  1. Depending on the size of your environment this could take some time to run
+
+1.
+  1.
+    1. Even several days.
+  2. These are ready only tests for connectivity to the DC&#39;s and the Forest/Domain
+
+1.
+  1.
+    1. You should be running as and Enterprise Admin
+  2. Click F5 to run the tests or the Play button.
+  3. Once the tests are complete the results will be in the following directory: F:\Project\Connectivity
+
+1.
+  1.
+    1. One file for Online and one file for Offline.
+
+**\* Note:**
+
+- These tests are used for troubleshooting.
+- These tests are also part of the other two tests.
+  - If these tests took a long time to run, you should keep a manual list of your PDC&#39;s and your Hosts that you want to be part of the test, rather than executing this each time as part of the other two tests.
+  - If the tests did not take a long time to run, then you don&#39;t need to make any modifications.
+
+1. **Invoke-inDomainTests**
+
+1.
+  1. See the **Note** from the Invoke-ConnectivityTests
+
+1. If you need to keep a Manual List you should replace the following lines in this script
+
+| Before24     # Find all online PDC&#39;s in the forest (each domain)25     $OnlineDCObjects = Get-ADSHOnlineDC -PDCOnly26     $OnlineDC = $OnlineDCObjects.Name  **Change 1 - command out line 25 by adding #** After25      #$OnlineDCObjects = Get-ADSHOnlineDC -PDCOnly   **Change 2 - add the list of your DC&#39;s on line 26, every DC in the forest should be listed** After26       $OnlineDC = &#39;DC1&#39;,&#39;DC3&#39;,&#39;DC56&#39; Or alternatively, keep your PDC list in a text file and read that in After26       $OnlineDC = Get-Content -Path $Base\ComputersDomainTests.txt  |
+| --- |
+
+1. Click F5 to run the tests or the Play button.
+
+1. Once the tests are complete the two reports will open
+
+1.
+  1. The Engineer Report (Latest-Domain-Report.html)
+  2. The Summary Report (Latest-Domain.html)
+
+1.
+  1.
+    1. These reports can also be found in the following directory: F:\Project\Reports
+    2. Only the latest HTML reports are kept
+    3. There is also raw reporting files in CSV format from Every single Run.
+
+1. **Invoke-Tests**
+
+1.
+  1. See the Note from the Invoke-ConnectivityTests (above)
+
+1.
+  1.
+    1. If you need to keep a Manual List you should replace the following lines in this script
+
+| Before
+24     # Find all online PDC&#39;s in the forest (each domain)25     $OnlineDCObjects = Get-ADSHOnlineDC -PDCOnly26     $OnlineDC = $OnlineDCObjects.Name | select -last 1  **Change 1 - command out line 25 by adding #** After25      #$OnlineDCObjects = Get-ADSHOnlineDC   **Change 2 - add the list of your PDC&#39;s on line 26, you can select any/single Domain Controller from each Domain here, they do not have to be the PDC.** After26       $OnlineDC = &#39;DC1&#39;,&#39;DC3&#39;,&#39;DC4&#39;,&#39;DC5&#39; Or alternatively, keep your PDC list in a text file and read that in After26       $OnlineDC = Get-Content -Path $Base\ComputersHostTests.txt  |
+| --- |
+
+1. By default  the tests only run against 1 host, you need to make a change to fix this
+
+| Before
+24     # Find all online PDC&#39;s in the forest (each domain)25     $OnlineDCObjects = Get-ADSHOnlineDC -PDCOnly26     $OnlineDC = $OnlineDCObjects.Name **| select -last 1**  Change 1 - remove the part that says  | select -last 1After26      $OnlineDC = $OnlineDCObjects.Name |
+| --- |
+
+1. Click F5 to run the tests or the Play button.
+
+1.
+  1. Note: These tests will take a long time to run, since it runs them against every Domain Controller
+
+1. Once the tests are complete the two reports will open
+
+1.
+  1. The Engineer Report (Latest-Domain-Report.html)
+  2. The Summary Report (Latest-Domain.html)
+
+1.
+  1.
+    1. These reports can also be found in the following directory: F:\Project\Reports
+    2. Only the latest HTML reports are kept
+    3. There is also raw reporting files in CSV format from Every single Run.
