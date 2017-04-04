@@ -1,6 +1,12 @@
 
 
-# ADSH Guidelines - Instructions
+# Tier0 Overview
+
+- Get Tier0 refers to the process of identifying Tier0 accounts on your domain.
+- The defintion of a Tier0 account is one that has control permission over Directory Services.
+- This tool maybe used in conjunction with ActiveDirectory Services Hardening. 
+
+# Tier0 Guidelines - Instructions
 
 Friday, August 12, 2016
 
