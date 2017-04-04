@@ -4,7 +4,9 @@
 
 - Get Tier0 refers to the process of identifying Tier0 accounts on your domain.
 - The defintion of a Tier0 account is one that has control permission over Directory Services.
-- This tool maybe used in conjunction with ActiveDirectory Services Hardening. 
+- This tool maybe used in conjunction with ActiveDirectory Services Hardening.
+- This is the table of tests that are performed
+  - [Tier0 Account Discovery Specifications](/wiki)
 
 # Tier0 Guidelines - Instructions
 
