@@ -6,7 +6,7 @@
 - The defintion of a Tier0 account is one that has control permission over Directory Services.
 - This tool maybe used in conjunction with ActiveDirectory Services Hardening.
 - This is the table of tests that are performed
-  - [Tier0 Account Discovery Specifications](wiki/Tier0-Specifications---What-tests-are-performed%3F)
+  - [Tier0 Account Discovery Specifications](https://github.com/brwilkinson/GetTier0/wiki/Tier0-Specifications---What-tests-are-performed%3F)
 
 # Tier0 Guidelines - Instructions
 
