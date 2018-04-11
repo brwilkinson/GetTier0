@@ -2,19 +2,18 @@
 
 # Tier0 Overview
 
-- Get Tier0 refers to the process of identifying Tier0 accounts on your domain.
+- Get Tier0 refers to the process of identifying Tier0 principals on your domain.
 - The defintion of a Tier0 account is one that has control permission over Directory Services.
-- This tool maybe used in conjunction with ActiveDirectory Services Hardening.
 - This is the table of tests that are performed
   - [Tier0 Account Discovery Specifications](https://github.com/brwilkinson/GetTier0/wiki/Tier0-Specifications---What-tests-are-performed%3F)
 
-# Tier0 Guidelines - Instructions
+# Get-Tier0 Guidelines - Instructions
 
 Friday, August 12, 2016
 
 4:52 PM
 
-## ADSH Pre-requisites.
+## Get-Tier0 Pre-requisites.
 
 - **Host Machine (where the tests are executed from)**
   - Powershell version 5.0 or 5.1
@@ -38,7 +37,7 @@ Friday, August 12, 2016
   - Domain Tests
     - You need network access to each PDC in each domain
 
-## ADSH Installation Instructions
+## Get-Tier0 Installation Instructions
 
 - Copy the latest version of the Code to your machine
   - g. F:\2016-08-1\_Project\_Backup.zip
