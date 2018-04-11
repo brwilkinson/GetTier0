@@ -1,6 +1,6 @@
 
 
-# Tier0 Overview
+# Get-Tier0 Overview
 
 - Get Tier0 refers to the process of identifying Tier0 principals on your domain.
 - The defintion of a Tier0 account is one that has control permission over Directory Services.
